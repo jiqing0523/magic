@@ -24,25 +24,25 @@ const storyData = {
 
     
     start: {
-      text: "。",
+      text: "一片黑暗籠罩，你只能面對眼前的一切。",
       options: [
-        { text: "", next: "leftPath" },
-        { text: "走右邊的河邊", next: "rightPath" }
+        { text: "選擇光之試煉，與光作戰", next: "light" },
+        { text: "選擇影之磨練，與黑暗作戰", next: "dark" }
       ]
     },
 
 
-    leftPath: {
-      text: "你沿著左邊小徑走，遇見一隻友善的狐狸。",
+    light: {
+      text: "現在你決定你要與光作戰，你進入銀光之殿，你看到空中散布著玻璃碎片，每一個碎片顯示著背叛的記憶。",
       options: [
-        { text: "和狐狸聊天", next: "talkFox" },
-        { text: "繼續往前走", next: "deepForest" }
+        { text: "選擇回到過去，挽回一切", next: "back" },
+        { text: "選擇忘掉懊悔，遮掩內心的愧疚", next: "front" }
       ]
     },
-    rightPath: {
-      text: "你走到河邊，看到一隻小船在等你。",
+    back: {
+      text: "你踏入悔悟之境，你一直逃避的過去讓你再次選擇，你的夥伴已經因你的法術受傷多次，卻仍幫助你。",
       options: [
-        { text: "坐船渡河", next: "crossRiver" },
+        { text: "", next: "crossRiver" },
         { text: "沿河走", next: "followRiver" }
       ]
     },
